@@ -1,6 +1,6 @@
 import styles from "./about.module.css";
 
-const AboutUs = () => {
+const AboutPage = () => {
   return (
     <div>
       <h1>About Us Page.</h1>
@@ -8,4 +8,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutPage;

@@ -26,36 +26,38 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.navbar}>
-        <div className={styles.logo}>
-          <h2>
-            <Link href="/">
-              <span>D</span>esignStudio
-            </Link>
-          </h2>
-          <div onClick={() => setIsOpen(!isOpen)} className={styles.menu}>
-            {isOpen ? <IoClose /> : <CiMenuFries />}
+      <div className="container">
+        <nav className={styles.navbar}>
+          <div className={styles.logo}>
+            <h2>
+              <Link href="/">
+                <span>D</span>esignStudio
+              </Link>
+            </h2>
+            <div onClick={() => setIsOpen(!isOpen)} className={styles.menu}>
+              {isOpen ? <IoClose /> : <CiMenuFries />}
+            </div>
           </div>
-        </div>
 
-        <ul className={`${styles.headerList} ${isOpen && styles.active}`}>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="/about-us">About&nbsp;Us</Link>
-          </li>
-          <li>
-            <Link href="/client">Client</Link>
-          </li>
-          <li>
-            <Link href="/vacancy">Vacancies</Link>
-          </li>
-          <li>
-            <Link href="/contact-us">Contact&nbsp;Us</Link>
-          </li>
-        </ul>
-      </nav>
+          <ul className={`${styles.headerList} ${isOpen && styles.active}`}>
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li>
+              <Link href="/about-us">About&nbsp;Us</Link>
+            </li>
+            <li>
+              <Link href="/client">Client</Link>
+            </li>
+            <li>
+              <Link href="/vacancy">Vacancies</Link>
+            </li>
+            <li>
+              <Link href="/contact-us">Contact&nbsp;Us</Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };
