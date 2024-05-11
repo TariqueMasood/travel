@@ -25,6 +25,12 @@ const NavList = (props: NavListProps) => {
       <ul className={styles.navList}>
         <NavLink isOpen={props.isOpen} setIsOpen={props.setIsOpen} />
       </ul>
+      {props.isOpen && (
+        <div
+          className={styles.overlay}
+          onClick={() => props.setIsOpen(!props.isOpen)}
+        ></div>
+      )}
     </>
   );
 };

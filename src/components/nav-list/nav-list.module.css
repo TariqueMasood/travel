@@ -19,6 +19,15 @@
   display: flex;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 240px;
+}
+
 @media (min-width: 768px) {
   .navList {
     flex-direction: row;

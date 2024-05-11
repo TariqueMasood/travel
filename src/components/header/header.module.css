@@ -21,7 +21,7 @@
   display: block;
   gap: 3rem;
   margin-right: -240px;
-  transition: 0.3s;
+  transition: all 0.2s;
 }
 
 .active {
