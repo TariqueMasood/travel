@@ -1,9 +1,11 @@
 :root {
-  --themeColor: #333333;
   --primaryText: #444444;
   --textLight: #ccc;
   --greyLight: #f2f2f2;
   --black2: #504e4e;
+  --themeColor: #0d1a36;
+  --textColor: #72819f;
+  --whiteColor: #fff;
 }
 
 * {
