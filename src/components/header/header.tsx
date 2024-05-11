@@ -4,7 +4,8 @@ import Link from "next/link";
 import styles from "./header.module.css";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { EventHandler, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+import NavList from "../nav-list/nav-list";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,36 +28,20 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className="container">
-        <nav className={styles.navbar}>
+        <div className={styles.headerWrapper}>
           <div className={styles.logo}>
-            <h2>
-              <Link href="/">
-                <span>D</span>esignStudio
-              </Link>
-            </h2>
-            <div onClick={() => setIsOpen(!isOpen)} className={styles.menu}>
-              {isOpen ? <IoClose /> : <CiMenuFries />}
-            </div>
+            <Link href="/">Travel</Link>
           </div>
-
-          <ul className={`${styles.headerList} ${isOpen && styles.active}`}>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about-us">About&nbsp;Us</Link>
-            </li>
-            <li>
-              <Link href="/client">Client</Link>
-            </li>
-            <li>
-              <Link href="/vacancy">Vacancies</Link>
-            </li>
-            <li>
-              <Link href="/contact-us">Contact&nbsp;Us</Link>
-            </li>
-          </ul>
-        </nav>
+          <div onClick={() => setIsOpen(!isOpen)} className={styles.hamburger}>
+            {isOpen ? <IoClose /> : <CiMenuFries />}
+          </div>
+          <nav className={`${styles.navbar} ${isOpen ? styles.active : ""}`}>
+            {<NavList isOpen={isOpen} setIsOpen={setIsOpen} />}
+            <Link href="/contact-us" className={styles.quoteBtn}>
+              Get a quote
+            </Link>
+          </nav>
+        </div>
       </div>
     </header>
   );
