@@ -17,7 +17,10 @@ const NavList = (props: NavListProps) => {
           className={`${styles.mobileHeader} ${props.isOpen && styles.show}`}
         >
           <div>Travel</div>
-          <div onClick={() => props.setIsOpen(!props.isOpen)}>
+          <div
+            onClick={() => props.setIsOpen(!props.isOpen)}
+            className={styles.closeIcon}
+          >
             <IoClose />
           </div>
         </div>

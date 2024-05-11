@@ -47,6 +47,10 @@
   display: block;
 }
 
+.hamburger svg {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
   .navbar {
     background-color: #fff;
