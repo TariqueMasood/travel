@@ -74,7 +74,9 @@ const Footer = () => {
             <div>
               <p>121 King Street, Melbourne.</p>
               <br />
-              <p>Phone: +12 9 8765 4321</p>
+              <p>
+                <Link href="tel:+12 9 8765 4321">Phone: +12 9 8765 4321</Link>
+              </p>
               <p>
                 Email:{" "}
                 <Link href="mailto:hellodemo@gmail.com">

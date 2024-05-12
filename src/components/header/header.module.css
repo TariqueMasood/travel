@@ -1,3 +1,7 @@
+.topHeader {
+  display: none;
+}
+
 .header {
   background-color: #fff;
   color: var(--primaryText);
@@ -52,6 +56,42 @@
 }
 
 @media (min-width: 768px) {
+  .topHeader {
+    display: block;
+    border-bottom: 1px solid var(--greyLight);
+    padding: 12px 0px;
+  }
+
+  .topHeaderWrapper {
+    color: var(--textColor);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phoneNumber {
+    display: flex;
+    gap: 30px;
+  }
+
+  .phoneLink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .border {
+    width: 1px;
+    height: 16px;
+    background-color: var(--textLight);
+  }
+
+  .locationIcon {
+    display: flex;
+    align-items: center;
+  }
+
   .navbar {
     background-color: #fff;
     position: static;
