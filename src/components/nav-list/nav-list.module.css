@@ -19,6 +19,22 @@
   display: flex;
 }
 
+.overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1.5s ease-in-out;;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 240px;
+}
+
+.closeIcon svg {
+  font-size: 20px;
+}
+
 @media (min-width: 768px) {
   .navList {
     flex-direction: row;
@@ -28,5 +44,10 @@
 
   .show {
     display: none;
+  }
+
+  .overlay {
+    visibility: hidden;
+    opacity: 0;
   }
 }
