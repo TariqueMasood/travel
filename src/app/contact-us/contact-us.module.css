@@ -1,0 +1,244 @@
+.topSectionContainer {
+  background-color: var(--themeColor);
+  color: var(--whiteColor);
+}
+
+.topSection {
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.arrowIcon svg {
+  display: block;
+}
+
+.wrapper {
+  background-color: var(--backgroundColor);
+  color: var(--black);
+  padding: 30px 0px;
+}
+
+.wrapper h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.subTitle {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0px;
+}
+
+.contactWrapper {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  padding: 7px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 5px;
+  background-color: var(--whiteColor);
+}
+
+.contact {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px dotted var(--textLight);
+  padding: 12px 0px;
+}
+
+.contactWrapper :nth-of-type(3) {
+  border-bottom: none;
+}
+
+.locationIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--greyLight);
+  color: var(--whiteColor);
+  border-radius: 50%;
+  width: 100px;
+  height: 66px;
+}
+
+.locationDiv {
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  background-color: var(--textLight);
+  color: var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.locationDiv svg {
+  font-size: 20px;
+}
+
+.contactTitle {
+  font-size: 14px;
+}
+
+.contactSubTitle {
+  font-size: 13px;
+  color: var(--textColor);
+  margin-top: 10px;
+}
+
+.contactForm {
+  max-width: 700px;
+  width: 100%;
+}
+
+.contactForm input {
+  font-size: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  display: block;
+  height: 50px;
+  padding: 7px 12px;
+  border: 1px solid var(--greyLight);
+  border-radius: 5px;
+  outline: none;
+}
+
+.contactForm input:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all ease-in 0.3s;
+}
+
+.contactForm select {
+  font-size: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+  display: block;
+  height: 50px;
+  padding: 7px 12px;
+  border: 1px solid var(--greyLight);
+  border-radius: 5px;
+  outline: none;
+}
+
+.contactForm select:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all ease-in 0.3s;
+}
+
+.contactForm textarea {
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 16px;
+  display: block;
+  height: 200px;
+  padding: 18px 12px;
+  border: 1px solid var(--greyLight);
+  border-radius: 5px;
+  outline: none;
+}
+
+.contactForm textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all ease-in 0.3s;
+}
+
+.contactForm button {
+  background-color: var(--themeColor);
+  border: 1px solid var(--themeColor);
+  color: var(--whiteColor);
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contactForm button:hover {
+  background-color: var(--whiteColor);
+  color: var(--themeColor);
+  border-color: var(--themeColor);
+  transition: all ease-in 0.4s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 768px) {
+  .wrapper {
+    background-color: var(--backgroundColor);
+    color: var(--black);
+    padding: 60px 0px;
+  }
+  .wrapper h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+  }
+
+  .subTitle {
+    margin-top: 30px;
+    text-align: center;
+    padding: 0px 200px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .formContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 0px;
+  }
+
+  .contactWrapper {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+    background-color: var(--whiteColor);
+  }
+
+  .locationDiv svg {
+    font-size: 30px;
+  }
+
+  .contactTitle {
+    font-size: 18px;
+  }
+
+  .contact {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px dotted var(--textLight);
+    padding: 20px 0px;
+  }
+
+  .contactSubTitle {
+    font-size: 16px;
+    color: var(--textColor);
+    margin-top: 10px;
+  }
+
+  .locationIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--greyLight);
+    color: var(--whiteColor);
+    border-radius: 50%;
+    width: 100px;
+    height: 72px;
+  }
+}
