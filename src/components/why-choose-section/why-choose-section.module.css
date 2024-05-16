@@ -1,17 +1,20 @@
 .wrapper {
+  padding: 50px 0px;
+  background-color: var(--themeColor);
+}
+
+.whyChooseCard {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 60px;
 }
 
 @media (min-width: 768px) {
-  .wrapper {
+  .whyChooseCard {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding-bottom: 60px;
   }
 }

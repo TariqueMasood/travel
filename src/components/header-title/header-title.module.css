@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 20px 0px;
+}
+
+.wrapper h1 {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding-bottom: 12px;
+}
+
+.wrapper p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 0px 0px 30px;
+  }
+  .wrapper h1 {
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .wrapper p {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 60px;
+  }
+}

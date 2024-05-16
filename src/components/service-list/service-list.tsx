@@ -3,6 +3,7 @@ import { MdBusinessCenter, MdFamilyRestroom, MdSchool } from "react-icons/md";
 import styles from "./service-list.module.css";
 import { FaGlobe, FaWrench } from "react-icons/fa";
 import { FaPersonWalkingLuggage } from "react-icons/fa6";
+import HeaderTitle from "../header-title/header-title";
 
 const services = [
   {
@@ -41,6 +42,14 @@ const ServiceList = () => {
   return (
     <div className={styles.cardList}>
       <div className="container">
+        <div className={styles.titleContainer}>
+          {" "}
+          <HeaderTitle
+            title="our services"
+            subTitle="Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa"
+            styles={{ textAlign: "center" }}
+          />
+        </div>
         <div className={styles.wrapper}>
           {services?.map((service) => (
             <ServiceCard key={service.title} {...service} />
