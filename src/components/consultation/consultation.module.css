@@ -1,0 +1,88 @@
+.wrapper {
+  padding: 20px 0px;
+  background-image: url("../../../public/images/consultant-bg-img.jpg");
+  background-repeat: no-repeat;
+}
+
+.consultant {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 2;
+}
+
+.founder {
+  width: 250px;
+}
+
+.form {
+  position: relative;
+  flex: 1;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.formImage {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: -1;
+}
+
+.formContainer {
+  padding: 18px;
+  background-color: var(--themeColor2);
+}
+
+.list li {
+  margin-bottom: 12px;
+  font-weight: 500;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.list li svg {
+  font-size: 18px;
+  color: var(--themeColor2);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: 60px 0px;
+    background-image: url("../../../public/images/consultant-bg-img.jpg");
+    background-repeat: no-repeat;
+  }
+  .consultant {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .formContainer {
+    padding: 45px;
+    background-color: var(--themeColor2);
+  }
+
+  .list li {
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 540px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 20px;
+    flex: 2;
+  }
+}

@@ -72,10 +72,17 @@ const Footer = () => {
           <div className={styles.contact}>
             <h4>Contact Details</h4>
             <div>
-              <p>121 King Street, Melbourne.</p>
+              <p className={styles.address}>
+                hunsapura near dr.sarfraz <br />
+                kopaganj (mau) U.P IND <br />
+                (275305)
+              </p>
               <br />
               <p>
-                <Link href="tel:+12 9 8765 4321">Phone: +12 9 8765 4321</Link>
+                <Link href="tel:+91 9935177951">Phone: +91 9935177951</Link>
+              </p>
+              <p>
+                <Link href="tel:+91 9695410786">Phone: +91 9695410786</Link>
               </p>
               <p>
                 Email:{" "}

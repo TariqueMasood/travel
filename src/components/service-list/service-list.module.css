@@ -1,12 +1,23 @@
+.cardList {
+  padding: 30px 0px;
+}
+
 .wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  padding-bottom: 60px;
+}
+
+.titleContainer {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
+  .cardList {
+    padding: 40px 0px;
+  }
+
   .wrapper {
     display: flex;
     flex-wrap: wrap;

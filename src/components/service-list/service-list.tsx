@@ -1,40 +1,45 @@
 import ServiceCard from "../service-card/service-card";
-import { MdBusinessCenter, MdFamilyRestroom, MdSchool } from "react-icons/md";
 import styles from "./service-list.module.css";
-import { FaGlobe, FaWrench } from "react-icons/fa";
-import { FaPersonWalkingLuggage } from "react-icons/fa6";
 import HeaderTitle from "../header-title/header-title";
+import {
+  IoBagHandleOutline,
+  IoPeopleOutline,
+  IoSchoolOutline,
+} from "react-icons/io5";
+import { PiWrenchLight } from "react-icons/pi";
+import { BsLuggage } from "react-icons/bs";
+import { CiGlobe } from "react-icons/ci";
 
 const services = [
   {
     title: "education visa",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    icon: <MdSchool />,
+    icon: <IoSchoolOutline />,
   },
   {
     title: "business immigration",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    icon: <MdBusinessCenter />,
+    icon: <IoBagHandleOutline />,
   },
   {
     title: "skilled immigration",
     desc: "Lorem ipsum dolor sit amet, consectetur elit. Qui dicta minus molestiae.",
-    icon: <FaWrench />,
+    icon: <PiWrenchLight />,
   },
   {
     title: "spous/family visas",
     desc: "Lorem ipsum dolor provident reiciendis optio in voluptatem.",
-    icon: <MdFamilyRestroom />,
+    icon: <IoPeopleOutline />,
   },
   {
     title: "tourist & visitor visas",
     desc: "Lorem ipsum dolor sit amet, elit. Qui dicta minus molestiae",
-    icon: <FaPersonWalkingLuggage />,
+    icon: <BsLuggage />,
   },
   {
     title: "resident return visas",
     desc: "Lorem ipsum dolor sit amet, expedita sunt et",
-    icon: <FaGlobe />,
+    icon: <CiGlobe />,
   },
 ];
 
@@ -45,9 +50,10 @@ const ServiceList = () => {
         <div className={styles.titleContainer}>
           {" "}
           <HeaderTitle
-            title="our services"
-            subTitle="Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa"
             styles={{ textAlign: "center" }}
+            title="our"
+            colorTitle="services"
+            subTitle="Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa"
           />
         </div>
         <div className={styles.wrapper}>

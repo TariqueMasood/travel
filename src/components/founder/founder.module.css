@@ -1,0 +1,22 @@
+.founderImg {
+  border: 2px solid var(--themeColor3);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.founderImg img {
+  display: block;
+  border-radius: 50%;
+}
+
+.wrapper h3 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 7px;
+}

@@ -1,0 +1,43 @@
+.wrapper {
+  border: 1px solid var(--textLight);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all ease-in-out 0.5s;
+  /* flex: 0 0 auto; */
+  width: 100%;
+  padding: 24px;
+}
+
+.flagImg {
+  width: 78px;
+  height: auto;
+}
+
+.wrapper p {
+  margin-top: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.wrapper:hover {
+  background-color: var(--themeColor);
+  color: var(--whiteColor);
+  transform: rotate(360deg);
+  transition: all ease-in-out 0.5s;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    border: 1px solid var(--textLight);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-in-out 0.5s;
+    flex: 0 0 auto;
+    width: 30%;
+    padding: 24px;
+  }
+}

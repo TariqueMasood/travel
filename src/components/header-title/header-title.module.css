@@ -3,15 +3,25 @@
 }
 
 .wrapper h1 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 600;
   text-transform: capitalize;
-  padding-bottom: 12px;
+}
+
+.wrapper h1 span {
+  color: var(--themeColor3);
 }
 
 .wrapper p {
   font-size: 16px;
   line-height: 30px;
+}
+
+.border {
+  width: 80px;
+  height: 5px;
+  background: linear-gradient(to right, var(--themeColor2), transparent);
+  display: inline-block;
 }
 
 @media (min-width: 768px) {
@@ -20,13 +30,17 @@
   }
   .wrapper h1 {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: capitalize;
+  }
+
+  .wrapper h1 span {
+    color: var(--themeColor3);
   }
 
   .wrapper p {
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 60px;
+    padding: 10px 0px;
   }
 }

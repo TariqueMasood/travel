@@ -1,5 +1,5 @@
 .wrapper {
-  padding: 50px 0px;
+  padding: 30px 0px;
   background-color: var(--themeColor);
 }
 
@@ -11,6 +11,11 @@
 }
 
 @media (min-width: 768px) {
+  .wrapper {
+    padding: 50px 0px;
+    background-color: var(--themeColor);
+  }
+
   .whyChooseCard {
     display: flex;
     flex-wrap: wrap;

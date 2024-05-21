@@ -23,6 +23,7 @@
 .formContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -77,80 +78,8 @@
   font-size: 14px;
 }
 
-.contactForm {
-  max-width: 700px;
-  width: 100%;
-}
-
-.contactForm input {
-  font-size: 16px;
-  margin-bottom: 24px;
-  width: 100%;
-  display: block;
-  height: 50px;
-  padding: 7px 12px;
-  border: 1px solid var(--greyLight);
-  border-radius: 5px;
-  outline: none;
-}
-
-.contactForm input:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all ease-in 0.3s;
-}
-
-.contactForm select {
-  font-size: 16px;
-  margin-bottom: 24px;
-  width: 100%;
-  display: block;
-  height: 50px;
-  padding: 7px 12px;
-  border: 1px solid var(--greyLight);
-  border-radius: 5px;
-  outline: none;
-}
-
-.contactForm select:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all ease-in 0.3s;
-}
-
-.contactForm textarea {
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 16px;
-  display: block;
-  height: 200px;
-  padding: 18px 12px;
-  border: 1px solid var(--greyLight);
-  border-radius: 5px;
-  outline: none;
-}
-
-.contactForm textarea:focus {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: all ease-in 0.3s;
-}
-
-.contactForm button {
-  background-color: var(--themeColor);
-  border: 1px solid var(--themeColor);
-  color: var(--whiteColor);
-  padding: 12px 24px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.contactForm button:hover {
-  background-color: var(--whiteColor);
-  color: var(--themeColor);
-  border-color: var(--themeColor);
-  transition: all ease-in 0.4s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.contactSubTitle {
+  margin-top: 12px;
 }
 
 .locationMap {
@@ -167,7 +96,7 @@
   .formContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: flex-start;
   }
 

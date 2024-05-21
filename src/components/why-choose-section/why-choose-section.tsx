@@ -32,7 +32,8 @@ const WhyChoose = () => {
     <div className={styles.wrapper}>
       <div className="container">
         <HeaderTitle
-          title="Why Choose Travel"
+          title="Why Choose"
+          colorTitle="Travel"
           subTitle="Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa"
           styles={{ textAlign: "center", color: "white" }}
         />

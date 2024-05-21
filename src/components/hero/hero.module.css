@@ -1,0 +1,110 @@
+.wrapper {
+  background-image: url("../../../public/images/hero-img.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+}
+
+.content {
+  color: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.content h1 {
+  max-width: 800px;
+  width: 100%;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.content button {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: 400;
+  border-radius: 5px;
+  background-color: var(--themeColor3);
+  border: 1px solid var(--themeColor3);
+  color: var(--whiteColor);
+  transition: all ease-in 0.5s;
+}
+
+.content button svg {
+  visibility: hidden;
+  opacity: 0;
+  font-weight: 700;
+  margin-left: 7px;
+  transition: visibility 1s, opacity 1s;
+}
+
+.content button:hover svg {
+  visibility: visible;
+  opacity: 1;
+}
+
+.content button:hover {
+  background-color: transparent;
+  border-color: var(--whiteColor);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    background-image: url("../../../public/images/hero-img.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+  }
+
+  .content h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+
+  .content h1 {
+    max-width: 800px;
+    width: 100%;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .content h1 span {
+    color: var(--themeColor3);
+  }
+
+  .content button {
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: var(--themeColor3);
+    border: 1px solid var(--themeColor3);
+    color: var(--whiteColor);
+  }
+}
