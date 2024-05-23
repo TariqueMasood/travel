@@ -5,8 +5,9 @@
 
 .whyChooseCard {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  scrollbar-width: none;
+  overflow-x: auto;
   gap: 20px;
 }
 

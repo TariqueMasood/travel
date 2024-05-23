@@ -56,7 +56,6 @@ const Country = () => {
               heading="COUNTRIES YOU CAN VISIT"
               title="Countries we support for the"
               colorTitle="immigration"
-              subTitle="There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis. our unmatched approach to business and cost effectiveness consulting"
             />
             <button className={styles.exploreBtn}>Explore More</button>
           </div>

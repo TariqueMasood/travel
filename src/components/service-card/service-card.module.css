@@ -13,6 +13,8 @@
   gap: 20px;
   cursor: pointer;
   padding: 18px;
+  flex: 0 0 auto;
+  width: 85%;
 }
 
 .card:hover {

@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   transition: all ease-in-out 0.5s;
-  /* flex: 0 0 auto; */
-  width: 100%;
+  flex: 0 0 auto;
+  width: 85%;
   padding: 24px;
 }
 
@@ -21,10 +21,8 @@
   text-transform: capitalize;
 }
 
-.wrapper:hover {
-  background-color: var(--themeColor);
-  color: var(--whiteColor);
-  transform: rotate(360deg);
+.wrapper:hover .flagImg {
+  rotate: 360deg;
   transition: all ease-in-out 0.5s;
 }
 

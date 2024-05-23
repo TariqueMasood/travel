@@ -53,7 +53,6 @@ const ServiceList = () => {
             styles={{ textAlign: "center" }}
             title="our"
             colorTitle="services"
-            subTitle="Cursus porta, feugiat primis in ultrice ligula risus auctor tempus dolor feugiat, felis lacinia risus interdum auctor id viverra dolor iaculis luctus placerat and massa"
           />
         </div>
         <div className={styles.wrapper}>

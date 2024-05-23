@@ -17,7 +17,6 @@ const Consultation = () => {
                 heading="CONTACT WITH US"
                 title="Book your"
                 colorTitle="consultation"
-                subTitle="There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo massa mollis."
               />
               <div>
                 <ul className={styles.list}>

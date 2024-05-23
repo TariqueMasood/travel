@@ -1,21 +1,50 @@
+"use client";
+
+import { ChangeEvent, FormEvent, useState } from "react";
 import styles from "./contact-form.module.css";
+import { useRouter } from "next/navigation";
+import { createContext } from "vm";
 
 const ContactForm = () => {
+  const [inputs, setInputs] = useState({
+    name: "",
+    email: "",
+  });
+
+  const router = useRouter();
+  const formContext = createContext();
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    alert(`Form details ${inputs.name} and ${inputs.email}`);
+    setInputs({
+      name: "",
+      email: "",
+    });
+  };
+
   return (
     <div className={styles.contactForm}>
-      <form action="#">
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
-          name="text"
-          // size={100}
+          name="name"
           placeholder="Enter Your Name*"
-          required
+          value={inputs.name}
+          onChange={handleChange}
         />
         <input
           type="text"
           name="email"
           placeholder="Enter Your Email*"
-          required
+          value={inputs.email}
+          onChange={handleChange}
         />
         <select>
           <option value="Your Question About..">Your Question About..</option>

@@ -4,10 +4,15 @@
 
 .wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
   gap: 20px;
 }
+
+/* element::-webkit-scrollbar {
+  display: none; 
+} */
 
 .titleContainer {
   text-align: center;

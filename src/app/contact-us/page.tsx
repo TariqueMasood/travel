@@ -29,9 +29,6 @@ const ContactUs = () => {
         <div className="container">
           <HeaderTitle
             title="Have Questions? Get in Touch"
-            subTitle="Cursus porta, feugiat primis in ultrice ligula risus auctor tempus
-          dolor feugiat, felis lacinia risus interdum auctor id viverra dolor
-          iaculis luctus placerat and massa"
             styles={{ textAlign: "center" }}
           />
           <div className={styles.formContainer}>
