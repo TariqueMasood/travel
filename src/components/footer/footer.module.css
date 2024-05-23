@@ -7,7 +7,6 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid var(--textColor);
 }
 
 .wrapper h4 {
@@ -43,7 +42,7 @@
 }
 
 .social span {
-  margin: 0px 18px;
+  margin: 0px 12px;
 }
 
 .social svg {
@@ -58,6 +57,7 @@
 
 .copyright p {
   font-size: 12px;
+  text-align: center;
 }
 
 .address {
@@ -65,20 +65,20 @@
   line-height: 1.4;
 }
 
+.socialContainer {
+  margin-top: 16px;
+  border-top: 1px solid var(--textColor);
+}
+
 @media (min-width: 768px) {
   .wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid var(--textColor);
-  }
-
-  .list li {
-    font-size: 20px;
   }
 
   .contact p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .social {
@@ -87,6 +87,10 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 24px;
+  }
+
+  .social span {
+    margin: 0px 18px;
   }
 
   .copyright p {

@@ -6,8 +6,8 @@
   justify-content: center;
   transition: all ease-in-out 0.5s;
   flex: 0 0 auto;
-  width: 85%;
-  padding: 24px;
+  width: 150px;
+  padding: 16px 0px;
 }
 
 .flagImg {

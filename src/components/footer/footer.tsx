@@ -97,31 +97,35 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className={styles.social}>
-          <div className={styles.copyright}>
-            <p>Copyright &copy; DesignStudio 2024.All Rights Reserved</p>
-          </div>
-          <div>
-            <span>
-              <Link href="#">
-                <FaInstagram />
-              </Link>
-            </span>
-            <span>
-              <Link href="#">
-                <FaTwitter />
-              </Link>
-            </span>
-            <span>
-              <Link href="#">
-                <FaFacebookF />
-              </Link>
-            </span>
-            <span>
-              <Link href="#">
-                <FaLinkedin />
-              </Link>
-            </span>
+      </div>
+      <div className={styles.socialContainer}>
+        <div className="container">
+          <div className={styles.social}>
+            <div className={styles.copyright}>
+              <p>Copyright &copy; DesignStudio 2024.All Rights Reserved</p>
+            </div>
+            <div>
+              <span>
+                <Link href="#">
+                  <FaInstagram />
+                </Link>
+              </span>
+              <span>
+                <Link href="#">
+                  <FaTwitter />
+                </Link>
+              </span>
+              <span>
+                <Link href="#">
+                  <FaFacebookF />
+                </Link>
+              </span>
+              <span>
+                <Link href="#">
+                  <FaLinkedin />
+                </Link>
+              </span>
+            </div>
           </div>
         </div>
       </div>

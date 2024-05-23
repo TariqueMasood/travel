@@ -34,12 +34,20 @@
 
 .quoteBtn {
   display: none;
-  background-color: var(--themeColor);
+  background-color: var(--themeColor3);
+  border: 1px solid var(--themeColor3);
   padding: 0.5rem 1rem;
   color: #fff;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: 14px;
   border-radius: 4px;
+  transition: all ease-in-out 0.5s;
+}
+
+.quoteBtn:hover {
+  background-color: transparent;
+  color: var(--themeColor3);
 }
 
 .logo {

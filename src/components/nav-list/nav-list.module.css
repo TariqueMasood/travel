@@ -13,7 +13,7 @@
   justify-content: space-between;
   padding: 1rem;
   color: #fff;
-  border-bottom: 1px solid var(--black2);
+  border-bottom: 1px solid var(--themeColor1);
 }
 
 .show {
