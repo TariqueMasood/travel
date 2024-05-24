@@ -67,7 +67,7 @@
 
 .socialContainer {
   margin-top: 16px;
-  border-top: 1px solid var(--textColor);
+  border-top: 1px solid var(--themeColor1);
 }
 
 @media (min-width: 768px) {

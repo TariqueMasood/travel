@@ -8,7 +8,7 @@ const Founder = () => {
       <div className={styles.founderImg}>
         <RxAvatar />
       </div>
-      <h3>munazir ahsan</h3>
+      <h3>monazir ahsan</h3>
       <p>CEO & Founder</p>
     </div>
   );

@@ -1,6 +1,6 @@
 import styles from "./visa-process.module.css";
 
-import img from "../../../public/images/image-1.png";
+import img from "../../../public/images/travel-img.png";
 import Image from "next/image";
 
 const VisaProcess = () => {
