@@ -1,5 +1,8 @@
+"use client";
+
 import styles from "./service-card.module.css";
 import { ReactNode } from "react";
+import { withFaroProfiler } from "@grafana/faro-react";
 
 type cardProps = {
   icon: ReactNode;
@@ -19,4 +22,4 @@ const ServiceCard = (props: cardProps) => {
   );
 };
 
-export default ServiceCard;
+export default withFaroProfiler(ServiceCard);
