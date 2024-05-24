@@ -9,9 +9,10 @@
   margin-bottom: 20px;
 }
 
-.founderImg img {
-  display: block;
-  border-radius: 50%;
+.founderImg svg {
+  font-size: 80px;
+  font-weight: 400;
+  color: var(--themeColor3);
 }
 
 .wrapper h3 {
