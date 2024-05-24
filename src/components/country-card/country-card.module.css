@@ -26,6 +26,12 @@
   transition: all ease-in-out 0.5s;
 }
 
+.wrapper:hover {
+  background-color: var(--themeColor1);
+  color: var(--whiteColor);
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     border: 1px solid var(--textLight);
