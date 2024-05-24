@@ -47,20 +47,12 @@
 }
 
 .content button svg {
-  visibility: hidden;
-  opacity: 0;
   font-weight: 700;
   margin-left: 7px;
-  transition: visibility 1s, opacity 1s;
-}
-
-.content button:hover svg {
-  visibility: visible;
-  opacity: 1;
 }
 
 .content button:hover {
-  background-color: transparent;
+  background-color: var(--themeColor3);
   border-color: var(--whiteColor);
 }
 
@@ -103,8 +95,8 @@
     letter-spacing: 1px;
     font-weight: 600;
     border-radius: 5px;
-    background-color: var(--themeColor3);
-    border: 1px solid var(--themeColor3);
+    background-color: transparent;
+    border: 1px solid var(--whiteColor);
     color: var(--whiteColor);
   }
 }
