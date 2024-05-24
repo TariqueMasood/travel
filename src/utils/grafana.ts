@@ -1,3 +1,5 @@
+"use client";
+
 import { getWebInstrumentations, initializeFaro } from '@grafana/faro-react';
 import { TracingInstrumentation } from '@grafana/faro-web-tracing';
 

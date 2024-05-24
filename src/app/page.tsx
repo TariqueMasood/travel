@@ -5,8 +5,9 @@ import VisaProcess from "@/components/visa-process/visa-process";
 import Hero from "@/components/hero/hero";
 import Consultation from "@/components/consultation/consultation";
 import Country from "@/components/country/country";
+import { withFaroProfiler } from "@grafana/faro-react";
 
-export default function Home() {
+function Home() {
   return (
     <main className={styles.main}>
       <Hero />
@@ -18,3 +19,5 @@ export default function Home() {
     </main>
   );
 }
+
+export default withFaroProfiler(Home);
