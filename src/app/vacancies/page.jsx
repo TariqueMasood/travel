@@ -1,4 +1,4 @@
-import styles from "./vacancy.module.css";
+import styles from "./vacancies.module.css";
 
 const Vacancy = () => {
   return (
