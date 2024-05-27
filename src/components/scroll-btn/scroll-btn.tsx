@@ -30,6 +30,7 @@ const ScrollBtn = () => {
       style={{ display: visible ? "block" : "none" }}
       onClick={scrollTop}
     >
+      <span className={styles.tooltiptext}>Scroll to Top</span>
       <IoIosArrowRoundUp />
     </button>
   );

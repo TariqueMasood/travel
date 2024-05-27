@@ -1,8 +1,9 @@
+import Image from "next/image";
 import styles from "./service-card.module.css";
 import { ReactNode } from "react";
 
 type cardProps = {
-  icon: ReactNode;
+  icon: string | any;
   title: string;
   desc: string;
 };
@@ -10,7 +11,9 @@ type cardProps = {
 const ServiceCard = (props: cardProps) => {
   return (
     <div className={styles.card}>
-      <div className={styles.iconImg}>{props.icon}</div>
+      <div className={styles.iconImg}>
+        <Image src={props.icon} alt="pic" />
+      </div>
       <div>
         <h4>{props.title}</h4>
         <p>{props.desc}</p>
