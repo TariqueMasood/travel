@@ -12,7 +12,10 @@ const VisaProcess = () => {
             <Image src={img} alt="pic" />
           </div>
           <div className={styles.content}>
-            <h1 className={styles.heading}>We make the visa process faster</h1>
+            <h1 className={styles.heading}>
+              We make the visa process{" "}
+              <span className={styles.yellowColor}>faster</span>
+            </h1>
             <p>
               Semper lacus cursus porta, feugiat primis ligula risus auctor and
               rhoncus in ultrice ligula purus ipsum primis in cubilia augue

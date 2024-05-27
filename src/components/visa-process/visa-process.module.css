@@ -52,6 +52,10 @@
   margin-bottom: 12px;
 }
 
+.yellowColor {
+  color: var(--themeColor3);
+}
+
 @media (min-width: 768px) {
   .wrapper {
     padding: 60px 0px;
@@ -72,24 +76,23 @@
 
   .heading {
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 30px;
     color: var(--textColor);
   }
 
   .sectionWrapper p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .sectionWrapper h3 {
-    margin: 30px 0px;
     font-size: 24px;
     font-weight: 500;
   }
 
   .sectionWrapper li {
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 26px;
     list-style: circle;
   }
 }
