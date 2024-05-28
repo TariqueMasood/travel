@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import styles from "./scroll-btn.module.css";
 import { IoIosArrowRoundUp } from "react-icons/io";
