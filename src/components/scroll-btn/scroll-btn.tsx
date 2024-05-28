@@ -5,6 +5,9 @@ import styles from "./scroll-btn.module.css";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
 const ScrollBtn = () => {
+  if (typeof window !== "undefined") {
+    // browser code
+  }
   const [visible, setVisible] = useState(false);
 
   const toggleVisible = () => {
