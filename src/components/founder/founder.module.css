@@ -10,8 +10,8 @@
 }
 
 .founderImg img {
-  display: block;
-  border-radius: 50%;
+  width: 70px;
+  height: auto;
 }
 
 .wrapper h3 {

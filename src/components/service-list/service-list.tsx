@@ -1,45 +1,43 @@
 import ServiceCard from "../service-card/service-card";
 import styles from "./service-list.module.css";
 import HeaderTitle from "../header-title/header-title";
-import {
-  IoBagHandleOutline,
-  IoPeopleOutline,
-  IoSchoolOutline,
-} from "react-icons/io5";
-import { PiWrenchLight } from "react-icons/pi";
-import { BsLuggage } from "react-icons/bs";
-import { CiGlobe } from "react-icons/ci";
+import educationImg from "../../../public/images/education-img.png";
+import businessImg from "../../../public/images/business-man-img.png";
+import skilledImg from "../../../public/images/skill-img.png";
+import familyImg from "../../../public/images/family-img.png";
+import touristImg from "../../../public/images/tourist-img.png";
+import residentImg from "../../../public/images/resident-img.png";
 
 const services = [
   {
     title: "education visa",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    icon: <IoSchoolOutline />,
+    icon: educationImg,
   },
   {
     title: "business immigration",
     desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    icon: <IoBagHandleOutline />,
+    icon: businessImg,
   },
   {
     title: "skilled immigration",
     desc: "Lorem ipsum dolor sit amet, consectetur elit. Qui dicta minus molestiae.",
-    icon: <PiWrenchLight />,
+    icon: skilledImg,
   },
   {
     title: "spous/family visas",
     desc: "Lorem ipsum dolor provident reiciendis optio in voluptatem.",
-    icon: <IoPeopleOutline />,
+    icon: familyImg,
   },
   {
     title: "tourist & visitor visas",
     desc: "Lorem ipsum dolor sit amet, elit. Qui dicta minus molestiae",
-    icon: <BsLuggage />,
+    icon: touristImg,
   },
   {
     title: "resident return visas",
     desc: "Lorem ipsum dolor sit amet, expedita sunt et",
-    icon: <CiGlobe />,
+    icon: residentImg,
   },
 ];
 

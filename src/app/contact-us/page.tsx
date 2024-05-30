@@ -80,7 +80,7 @@ const ContactUs = () => {
         </div>
         <div className={styles.locationMap}>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387194.0622732494!2d-74.30932777004287!3d40.697019286161634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1715781089277!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d316.9167939005839!2d83.56542667097813!3d26.01705318847678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1716559480174!5m2!1sen!2sin"
             width="100%"
             height="450"
             loading="lazy"

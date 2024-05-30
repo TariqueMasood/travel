@@ -1,5 +1,3 @@
-import styles from "./client.module.css";
-
 const Client = () => {
   return (
     <div>

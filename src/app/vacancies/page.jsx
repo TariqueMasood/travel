@@ -1,5 +1,3 @@
-import styles from "./vacancy.module.css";
-
 const Vacancy = () => {
   return (
     <div>
