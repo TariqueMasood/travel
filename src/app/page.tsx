@@ -1,3 +1,5 @@
+"use client";
+
 import ServiceList from "@/components/service-list/service-list";
 import styles from "./page.module.css";
 import WhyChoose from "@/components/why-choose-section/why-choose-section";

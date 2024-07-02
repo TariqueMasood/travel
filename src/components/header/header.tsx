@@ -4,7 +4,7 @@ import Link from "next/link";
 import styles from "./header.module.css";
 import { CiMenuFries } from "react-icons/ci";
 import { IoClose } from "react-icons/io5";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import NavList from "../nav-list/nav-list";
 import { MdLocationOn } from "react-icons/md";
 import { BsEnvelopeOpen, BsTelephone } from "react-icons/bs";
