@@ -63,12 +63,6 @@
   font-size: 20px;
 }
 
-.scrollBar {
-  position: fixed;
-  bottom: 12px;
-  right: 12px;
-}
-
 @media (min-width: 768px) {
   .topHeader {
     display: block;

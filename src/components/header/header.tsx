@@ -10,7 +10,6 @@ import { MdLocationOn } from "react-icons/md";
 import { BsEnvelopeOpen, BsTelephone } from "react-icons/bs";
 import logo from "../../../public/images/logo-2.png";
 import Image from "next/image";
-import ScrollBtn from "../scroll-btn/scroll-btn";
 
 const TopHeader = () => {
   return (
@@ -68,10 +67,6 @@ const Header = () => {
               </Link>
             </nav>
           </div>
-        </div>
-
-        <div className={styles.scrollBar}>
-          <ScrollBtn />
         </div>
       </header>
     </>
