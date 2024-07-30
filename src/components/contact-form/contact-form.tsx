@@ -26,35 +26,30 @@ const ContactForm = () => {
     updateFormData(name, value);
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log(formData);
+
+    try {
+      await fetch("/api/send", {
+        method: "POST",
+        body: JSON.stringify({
+          email: "akramaltaf786@gmail.com",
+          name: formData.name,
+          message: formData.message,
+          visaType: formData.visaType,
+        }),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+    } catch (error: any) {
+      console.log("Error", error);
+    }
+
     saveToLocalStorage();
     resetFormData();
-    router.push("/customer");
+    router.push("/");
   };
-
-  // const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-  //   event.preventDefault();
-
-  //   try {
-  //     const res = await fetch("/api/email", {
-  //       method: "POST",
-  //       body: JSON.stringify({
-  //         inputs,
-  //       }),
-  //       headers: {
-  //         "content-type": "application/json",
-  //       },
-  //     });
-  //   } catch (error: any) {
-  //     console.log("Error", error);
-  //   }
-  //   setInputs({
-  //     name: "",
-  //     email: "",
-  //   });
-  // };
 
   return (
     <div className={styles.contactForm}>
@@ -93,9 +88,7 @@ const ContactForm = () => {
           placeholder="Your Message..."
         ></textarea>
 
-        <button type="submit" value=" Send Your Message">
-          Send Your Message
-        </button>
+        <button type="submit">Send Your Message</button>
       </form>
     </div>
   );
